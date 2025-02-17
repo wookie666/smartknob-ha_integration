@@ -129,7 +129,7 @@ void ConnectivityTask::sendMqttKnobStateDiscoveryMsg() {
     // Serialize JSON into a string
     std::string jsonString;
     serializeJson(payload, jsonString);
-1
+
     // Log the JSON message
     snprintf(buf_, sizeof(buf_), "Serialized JSON (%d bytes): %s", jsonString.length(), jsonString.c_str());
     log(buf_);
